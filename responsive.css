@@ -1,0 +1,175 @@
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .apresentacao__conteudo__titulo {
+        width: auto;
+    }
+
+    .apresentacao__conteudo__sobre {
+        width: auto;
+    }
+
+    .apresentacao__imagem {
+        width: 100%;
+        /* Define a largura da imagem como 100% */
+        margin-top: 20px;
+        /* Adiciona espaçamento superior */
+    }
+
+
+    .skills__box img {
+        max-width: 80px;
+        /* Define a largura máxima da imagem */
+        height: auto;
+        /* Mantém a proporção da imagem */
+    }
+
+    @media (max-width: 992px) {
+        .cabecalho__menu {
+            flex-direction: column;
+            /* Altera a direção dos itens para uma coluna */
+            align-items: center;
+            /* Alinha os itens ao centro verticalmente */
+            gap: 20px;
+            /* Adiciona espaçamento entre os itens */
+        }
+
+        .apresentacao {
+            flex-direction: column;
+            /* Altera a direção dos itens para uma coluna */
+            padding: 5%;
+            /* Adiciona preenchimento interno */
+        }
+
+        .apresentacao__conteudo {
+            width: 100%;
+            /* Define a largura do conteúdo como 100% */
+        }
+
+        .apresentacao__imagem {
+            width: 100%;
+            /* Define a largura da imagem como 100% */
+            margin-top: 20px;
+            /* Adiciona espaçamento superior */
+        }
+
+        .apresentacao__links__botao {
+            width: 100%;
+            /* Define a largura do botão como 100% */
+        }
+
+        .skills__line {
+            justify-content: center;
+            /* Centraliza os itens */
+        }
+
+        .skills__box {
+            width: 120px;
+            /* Reduz a largura das caixas */
+            height: 120px;
+            /* Reduz a altura das caixas */
+        }
+
+        .skills__name {
+            font-size: 0.8rem;
+            /* Reduz o tamanho da fonte */
+        }
+
+        .projeto-slide img {
+            width: 100%;
+            /* Define a largura da imagem como 100% */
+            height: auto;
+            /* Mantém a proporção da imagem */
+            display: block;
+            /* Garante que a margem automática funcione corretamente */
+            margin-left: auto;
+            /* Centraliza a imagem horizontalmente */
+            margin-right: auto;
+            /* Centraliza a imagem horizontalmente */
+        }
+
+
+        .skills__box img {
+            max-width: 30px;
+            /* Define a largura máxima da imagem */
+            height: auto;
+            /* Mantém a proporção da imagem */
+        }
+    }
+
+    @media (max-width: 576px) {
+        .cabecalho {
+            padding: 5%;
+            /* Reduz o preenchimento do cabeçalho */
+        }
+
+        .cabecalho__menu {
+            gap: 10px;
+            /* Adiciona espaçamento entre os itens */
+        }
+
+        .apresentacao__conteudo__titulo {
+            font-size: 1.5rem;
+            /* Reduz o tamanho da fonte do título */
+        }
+
+        .apresentacao__conteudo__texto,
+        .apresentacao__conteudo__sobre {
+            font-size: 1rem;
+            /* Reduz o tamanho da fonte do texto */
+        }
+
+        .apresentacao__links__botao {
+            font-size: 1rem;
+            /* Reduz o tamanho da fonte do botão */
+        }
+
+        .skills {
+            font-size: 1.5rem;
+            /* Reduz o tamanho da fonte da sessão Skills */
+            margin-bottom: 20px;
+            /* Reduz a margem inferior */
+        }
+
+        .skills__name {
+            font-size: 0.8rem;
+            /* Reduz o tamanho da fonte do nome de habilidades */
+        }
+
+        .projeto-slide img {
+            width: 100%;
+            /* Define a largura da imagem como 100% */
+            height: auto;
+            /* Mantém a proporção da imagem */
+            display: block;
+            /* Garante que a margem automática funcione corretamente */
+            margin-left: auto;
+            /* Centraliza a imagem horizontalmente */
+            margin-right: auto;
+            /* Centraliza a imagem horizontalmente */
+        }
+
+        .skills img {
+            width: 30px;
+            /* Ajuste a largura conforme necessário */
+            height: auto;
+            /* Mantém a proporção da imagem */
+        }
+    }
+
+}

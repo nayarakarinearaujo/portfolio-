@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="#apresentacão">Home</a>
+            <a class="cabecalho__menu__link" href="#sobre">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="#projeto">Projetos</a>
+            <a class="cabecalho__menu__link" href="#curriculo">Currículo</a>
+        </nav>
+    </header>
+
+    <main id="apresentacao" class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível <strong
+                    class="titulo-destaque">com um Front-end de qualidade!</strong></h1>
+            <p class="apresentacao__conteudo__texto">Olá! Sou Nayara Karine, desenvolvedora Front-end com especialidade
+                em JavaScript, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos
+                conversar?</p>
+            <div class="apresentacao__links">
+                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
+                <a class="apresentacao__links__botao" href="https://github.com/nayarakarinearaujo" target="_blanck"
+                    rel="external">
+                    <img src="imagens/github.png">
+                    GitHub
+                </a>
+
+                <a class="apresentacao__links__botao" href="https://www.instagram.com/nayarakarine.araujo/"
+                    target="_blanck" rel="external">
+                    <img src="imagens/instagram.png">
+                    Instagram
+                </a>
+
+                <a class="apresentacao__links__botao" href="https://www.linkedin.com/in/nayarakarine-araujo/"
+                    target="_blanck" rel="external">
+                    <img src="imagens/linkedin.png">
+                    Linkedin
+                </a>
+            </div>
+        </section>
+        <img class="apresentacao__imagem" src="./imagens/foto-nayara-moldura-redonda-png.png"
+            alt="Foto da Nayara Karine">
+    </main>
+
+    <main id="sobre" class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
+            <p class="apresentacao__conteudo__sobre">Olá! Me chamo Nayara Karine da Silva Araújo, tenho 30 anos, moro em
+                Campinas - SP.<br>
+                Sempre fui apaixonada pela área da Tecnologia, em como ela muda tudo ao nosso redor. Partindo dessa
+                paixão, comecei o curso de Análise e Desenvolvimento de Sistemas. Depois de quase um ano de estudos,
+                consegui migrar para a área tech como Analista de Desenvolvimento de Sistemas.
+                Tem sido um desafio interessante trabalhar na área que eu buscava. 
+                <br>
+                Gosto muito de estudar e estou aprimorando meus conhecimentos em Front-end, 
+                atualmente estou estudando: JavaScript, HTML, CSS. Também quero aprofundar meus conhecimentos
+                no Back-end, recentemente comecei a estudar JAVA.
+                <br>
+                Sou uma pessoa proativa, organizada e gosto muito de aprender coisas novas, além de buscar novos
+                desafios!
+            </p>
+        </section>
+    </main>
+
+
+
+    <main id="projeto" class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Projetos</h1>
+            
+            <div class="botao-container">
+                <button id="anterior">Anterior</button>
+                <button id="proximo">Próximo</button>
+            </div>
+
+            <div id="carrossel-projeto" class="carrossel">
+
+                <div class="projeto-slide">
+                    <p class="projeto-texto">Jodo do Número Secreto</p>
+                    <p class="projeto-texto_explicaçao">Esse projeto é um jogo simples onde você tenta adivinhar um número. Na página, você verá
+                        instruções e um campo para inserir sua suposição. Depois de inserir sua resposta, você pode
+                        clicar no botão "Chutar" para verificar se está correto. Se estiver errado, o jogo dará
+                        feedback. Você pode reiniciar o jogo a qualquer momento clicando no botão "Novo jogo".</p>
+                    <a class="projeto" href="https://jogo-five-dun.vercel.app/" target="_blanck" rel="external">Link do
+                        projeto</a>
+                    <img src="imagens/imagens-projetos/jogo-five-dun.vercel.app_ (3)(500).png" alt="Imagem do projeto">
+                </div>
+
+                <div class="projeto-slide">
+                    <p class="projeto-texto">Decodificador de texto</p>
+                    <p class="projeto-texto_explicaçao">Descrição:
+                        Neste projeto, é possivel fazer a criptografa e descriptografa textos de acordo com algumas
+                        regras específicas.
+                        Descrição
+                        A criptografia segue seguintes regras:
+                        <ul class="projeto-texto_explicaçao"><li>A letra "e" é convertida para "enter"</li>
+                            <li>A letra "i" é convertida para "imes"</li>
+                            <li>A letra "a" é convertida para "ai"</li>
+                            <li>A letra "o" é convertida para "ober" </li>
+                            <li>A letra "u" é convertida para "ufat"</li>
+                            <br>
+                        É possível converter uma palavra para a versão criptografada e também retornar uma palavra
+                        criptografada para a versão original
+                    </ul>
+                    </p>
+                    <a class="projeto" href="https://challenge-one-01.vercel.app/" target="_blanck"
+                        rel="external">Link do projeto</a>
+                    <img src="imagens/imagens-projetos/nayarakarinearaujo.github.io_challenge-one-01_(500).png"
+                        alt="Imagem do projeto">
+                </div>
+
+                <div class="projeto-slide">
+                    <p class="projeto-texto">Lista de tarefas</p>
+                    <p class="projeto-texto_explicaçao"> O projeto serve como uma interface simples para gerenciar uma lista de tarefas, onde os usuários
+                        podem adicionar, modificar e remover tarefas conforme necessário.</p>
+                    <a class="projeto" href="https://lista-de-tarefas-ten-rho.vercel.app/" target="_blanck"
+                        rel="external">Link do projeto</a>
+                    <img src="imagens/imagens-projetos/QsvQJDWZrv(500).png" alt="">
+                </div>
+
+                <div class="projeto-slide">
+                    <p class="projeto-texto">Formulário de Devs</p>
+                    <p class="projeto-texto_explicaçao">Esse projeto é um formulário de cadastro para desenvolvedores. Ele permite que os usuários
+                        insiram suas informações, como nome, sobrenome, email, tecnologias que utilizam, senioridade e
+                        experiência. Ao preencher o formulário e clicar no botão "Concluído", as informações são
+                        enviadas para algum lugar (possivelmente um servidor) para processamento posterior. O objetivo é
+                        coletar informações sobre os desenvolvedores para algum propósito específico, como recrutamento
+                        ou análise de habilidades.</p>
+                    <a class="projeto" href="https://projeto-formulario-six.vercel.app/" target="_blanck"
+                        rel="external">Link do projeto</a>
+                    <img src="imagens/imagens-projetos/xJ7GKCFidu(800).png" alt="">
+                </div>
+
+                <div class="projeto-slide">
+                    <p class="projeto-texto">Clone layout chat Conversas do Whatsapp</p>
+                    <p class="projeto-texto_explicaçao">Esse projeto é uma interface simplificada de um aplicativo de mensagens semelhante ao WhatsApp.
+                        Ele permite visualizar conversas com diferentes contatos e enviar mensagens. Na barra lateral,
+                        você pode ver uma lista de chats com contatos específicos, e na seção principal, você pode
+                        visualizar as mensagens de um contato selecionado e enviar novas mensagens. O objetivo é simular
+                        um ambiente de troca de mensagens entre usuários.</p>
+                    <a class="projeto" href="https://clone-conversa-wats.vercel.app/" target="_blanck"
+                        rel="external">Link do projeto</a>
+                    <img src="imagens/imagens-projetos/Watschat(500).png"
+                        alt="Imagem do projeto interface chat do Whatsapp">
+                </div>
+
+                <div class="projeto-slide">
+                    <p class="projeto-texto">Landing Pag Tratador de Piscinas</p>
+                    <p class="projeto-texto_explicaçao">Esse projeto é um site para promover os serviços de uma empresa de manutenção de piscinas. 
+                        Ele oferece informações sobre os serviços prestados, os benefícios de contratar a empresa e imagens
+                        ilustrativas dos serviços oferecidos. Além disso, há um formulário de contato para os clientes
+                        agendarem uma avaliação e os detalhes de contato da empresa, como telefone, e-mail e redes
+                        sociais. O objetivo é atrair clientes interessados em serviços de manutenção de piscinas e
+                        facilitar o contato com a empresa.</p>
+                    <a class="projeto" href="https://ladingpage-tratador-de-piscinas.vercel.app/"
+                        target="_blanck" rel="external">Link do projeto</a>
+                    <img src="imagens/imagens-projetos/ladingpage-tratador-de-piscinas.vercel.app_.png" alt="Imagem do projeto">
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <main id="curriculo" class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Currículo</h1>
+            <p class="apresentacao__conteudo__texto">Objetivo:Desenvolvedora Full stack</p>
+
+            <section class="skills">
+                <h3 class="skills__title" id="skills">Skills</h3>
+                <div class="skills__line">
+                    <div class="skills__box">
+                        <ul>
+                            <li class="skills__img"><img src="imagens/html-5 .png"></li>
+                            <li class="skills__name"> Html 5</li>
+                        </ul>
+                    </div>
+    
+                    <div class="skills__box">
+                        <ul>
+                            <li class="skills__img"> <img src="imagens/javascript.png" alt=""></li>
+                            <li class="skills__name">Javascript</li>
+                        </ul>
+                    </div>
+    
+                    <div class="skills__box">
+                        <ul>
+                            <li class="skills__img"> <img src="imagens/java (2).png" alt=""></li>
+                            <li class="skills__name">JAVA</li>
+                        </ul>
+                    </div>
+    
+                    <div class="skills__box">
+                        <ul>
+                            <li class="skills__img"><img src="imagens/css-3 .png" alt=""></li>
+                            <li class="skills__name">CSS 3</li>
+                        </ul>
+                    </div>
+    
+                    <div class="skills__box">
+                        <ul>
+                            <li class="skills__img"> <img src="imagens/git.png" alt=""> </li>
+                            <li class="skills__name">Git</li>
+                        </ul>
+                    </div>
+    
+                    <div class="skills__box">
+                        <ul>
+                            <li class="skills__img"> <img src="imagens/mysql.png" alt=""> </li>
+                            <li class="skills__name">MySql</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--
+            <h2 class="apresentacao__conteudo__titulo">Tecnologias</h2>
+            <p class="apresentacao__conteudo__texto">
+            <ul class="apresentacao__conteudo__texto__badge">
+                <li><img alt="JavaScript"
+                        src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+                </li>
+                <li><img alt="html5"
+                        src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+                </li>
+                <li><img alt="css3"
+                        src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+                </li>
+                <li><img alt="Java"
+                        src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
+                </li>
+                <li><img alt="Git"
+                        src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" />
+                </li>
+
+            </ul>
+            </p>
+-->
+            <h2 class="apresentacao__conteudo__titulo">Estudos</h2>
+            <div class="apresentacao__conteudo__texto">
+                <ul class="apresentacao__conteudo__texto">
+                    <li>Técnico em informática- Fitel - Campinas, 2011<a
+                            href="https://drive.google.com/file/d/1NGX2CnnlvF5XcfCf1RAmm8Sadex_rHA4/view?usp=sharing"
+                            target="_blanck" rel="external">com certificado</a> </li>
+                    <br>
+                    <li>Curso Tecnólogo: Análise e Desenvolvimento de Sistemas
+                        Local: Universidade Cruzeiro do Sul - EAD
+                        Início: Agosto 2023
+                        Previsão de término: Agosto 2025 <a
+                            href="https://drive.google.com/file/d/1KB91BTCeuAmsSqg2H2bYppc7rL0cgX7E/view?usp=sharing"
+                            target="_blanck" rel="external">com histórico escolar.</a></li>
+                    <br>
+                    <li>Curso HTML5 e CSS3 - Curso em Vídeo.</li>
+                    <br>
+                    <li>Programa Desenvolvedor FRONT-END - ONE (Oracle Next Education) com ALURA</li>
+                    <br>
+                    <li>Programa Elas Tech: JAVA - SoulCode com PagBank</li>
+                </ul>
+            </div>
+            <h2 class="apresentacao__conteudo__sobre">Abaixo está meu currículo para download: </h2>
+            <ul>
+                <li><a class="apresentacao__conteudo__texto"
+                        href="arquivos/Nayara Karine da Silva Araújo.docx.pdf"
+                        download="Nayara Karine da Silva Araújo.docx.pdf" type="application pdf" target="_blanck"
+                        rel="external"><strong class="titulo-destaque">Currículo</strong></a></li>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Nayara Karine</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</body>
+
+</html>

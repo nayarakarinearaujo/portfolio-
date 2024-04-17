@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #E4F1FF;
+    --cor-terciaria: #AA14F0;
+    --cor-hover: #acadb8a8;
+
+    --font-primaria: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: underline;
+}
+
+.apresentacao {
+    display: flex;
+    padding: 5% 15%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--font-primaria);
+    text-align: center;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--font-secundaria);
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+}
+
+.apresentacao__conteudo__texto a {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__sobre {
+    font-size: 1.5rem;
+    font-family: var(--font-secundaria);
+    width: 500px;
+    text-decoration: none;
+
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__botao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+}
+
+.apresentacao__links__botao:hover {
+    background-color: var(--cor-hover);
+    border-radius: 20%;
+}
+
+.apresentacao__imagem {
+    width: 30%;
+}
+
+.projeto-slide {
+    display: none;
+    /* Oculta todos os slides por padrão */
+    width: 80%;
+    /* Defina a largura desejada para cada slide */
+
+
+}
+
+.projeto-slide img {
+    width: 150%;
+    /* Defina a largura para ocupar 100% do contêiner */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    display: block;
+    /* Garante que a margem automática funcione corretamente */
+    margin-left: 100%;
+    /* Centraliza a imagem horizontalmente */
+    margin-right: auto;
+    /* Centraliza a imagem horizontalmente */
+
+}
+
+.projeto-slide.mostrando {
+    display: block;
+    /* Exibe apenas o slide atual */
+}
+
+.projeto-slide-titulo {
+    font-size: 1.5rem;
+    font-family: var(--font-secundaria);
+    text-decoration: none;
+}
+
+.projeto-texto {
+    font-size: 1.5rem;
+    font-family: var(--font-secundaria);
+    text-decoration: none;
+    text-align: justify;
+    margin-top: 20px;
+
+}
+
+.projeto-texto_explicaçao {
+    font-size: 1rem;
+    font-family: var(--font-secundaria);
+    text-decoration: none;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+
+
+.projeto-texto-link {
+    font-size: 1rem;
+    font-family: var(--font-secundaria);
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.projeto {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+}
+
+
+/*Sessão Skills*/
+
+.skills {
+    font-size: 2.25rem;
+    font-family: var(--font-primaria);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    /* Adiciona espaço abaixo da sessão Skills */
+    padding: 5%;
+}
+
+.skills__title {
+    text-align: center;
+    margin-bottom: 40px;
+    /* Adiciona espaço abaixo*/
+}
+
+.skills__line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Distribui os elementos igualmente ao longo da linha */
+
+}
+
+.skills__box {
+    margin-bottom: 20px;
+    /* Espaçamento inferior entre as caixas */
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: rgb(252, 253, 255);
+    display: flex;
+    /* Alterando para flex para os itens ficarem em linha */
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* Alinha os itens verticalmente */
+}
+
+.skills__box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    /* Centraliza o conteúdo dentro da caixa */
+}
+
+.skills__box ul li {
+    margin-bottom: 10px;
+    /* Espaçamento inferior entre os itens */
+}
+
+.skills__name {
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--font-primaria);
+    color: #000000;
+
+}
+
+.skills__img {
+    margin-right: 10px;
+    /* Adiciona espaçamento entre a imagem e o texto */
+}
+
+
+.botao-container {
+    display: flex;
+    /* Ativa o layout flexível */
+}
+
+#anterior,
+#proximo {
+    padding: 10px;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 16px;
+    background-color: var(--cor-primaria);
+    margin: 0 10px;
+    /* Adiciona margem entre os botões */
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
